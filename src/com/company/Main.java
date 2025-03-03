@@ -11,19 +11,28 @@ public class Main {
         System.out.println("Hello World");
         Main_Sys sys = new Main_Sys("8xSys");
         sys.printSysDetails();
+        sys.isWeConnectedWithGithubOnline();
+        System.out.println(sys.isWeConnectedWithGithubOnline());
+
     }
 }
 
 
 
 class Main_Sys{
-    String specification;
+    private String specification;
+    private boolean isOnlineConn;
     Main_Sys(String specification){
         this.specification = specification;
     }
 
     void printSysDetails(){
         System.out.println(this.specification);
+    }
+
+
+    boolean isWeConnectedWithGithubOnline(){
+       return this.isOnlineConn = true;
     }
 }
 
