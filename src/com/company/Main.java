@@ -14,9 +14,9 @@ public class Main {
 
 
 
-class System{
+class Main_Sys{
     String specification;
-    System(String specification){
+    Main_Sys(String specification){
         this.specification = specification;
     }
 }
